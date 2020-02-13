@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4384186743528256914
+--- !u!1 &8422899427134112530
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4384186743528256915}
-  - component: {fileID: 36750203}
-  - component: {fileID: 36750204}
+  - component: {fileID: 8422899427134112531}
+  - component: {fileID: 8422899427134112528}
   m_Layer: 0
-  m_Name: Level
+  m_Name: Game Status
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4384186743528256915
+--- !u!4 &8422899427134112531
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4384186743528256914}
+  m_GameObject: {fileID: 8422899427134112530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,28 +31,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &36750203
+--- !u!114 &8422899427134112528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4384186743528256914}
+  m_GameObject: {fileID: 8422899427134112530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2a56153d2d9e4a8aa84b9cb4c90a9aa, type: 3}
+  m_Script: {fileID: 11500000, guid: 802fd4dbf57694ed298acd558279efa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakableBlocks: 0
---- !u!114 &36750204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4384186743528256914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fef1d1afd40a4de1ace5ebfb956e19d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  gameSpeed: 1.1

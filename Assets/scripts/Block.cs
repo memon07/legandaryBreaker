@@ -8,15 +8,24 @@ public class Block : MonoBehaviour
 
     //cached reference
     level lev;
+    GameStatus gameStatus;
 
     private void Start()
     {
         lev = FindObjectOfType<level>();
         lev.CountBreakableBlocks();
+        gameStatus = FindObjectOfType<GameStatus>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        DestroyBlock();
+    }
+
+    private void DestroyBlock()
+    {
+        gameStatus.AddToScore();
         AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
         Destroy(gameObject);
+        lev.BlockDestroyed();
     }
 }
